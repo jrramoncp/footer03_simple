@@ -1,13 +1,57 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Footer 03</title>
   </head>
   <body>
-    <div id="app"></div>
+    <footer class="footer">
+      <!-- LOGO CONTAINER -->
+      <div class="logo__container">
+        <img src="/img/site_logo.svg" alt="site logo">
+      </div>
+
+      <!-- CONTENT -->
+       <section class="content__container">
+        <!-- content top -->
+        <div class="content__top">
+          <nav class="footer__nav">
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="#">Team</a></li>
+            </ul>
+           </nav>
+           <div class="search_social__container">
+              <input type="text" placeholder="search...">
+              <div class="social__container">
+                <img src="/img/facebook-icon.svg" alt="facebook icon">
+                <img src="/img/twitter-icon.svg" alt="twitter icon">
+                <img src="/img/telegram-icon.svg" alt="telegram icon">
+                <img src="/img/instagram-icon.svg" alt="instagram icon">
+              </div>
+           </div>
+        </div>
+        <hr> <!-- decorative bar -->
+        <!-- content bottom -->
+         <div class="content__bottom">
+          <ul class="legal_info__container">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Sales and Refunds</a></li>
+            <li><a href="#">Legal</a></li>
+            <li><a href="#">Site Map</a></li>
+          </ul>
+         </div>
+
+
+
+       </section>
+    </footer>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

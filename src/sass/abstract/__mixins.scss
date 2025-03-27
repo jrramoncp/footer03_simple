@@ -3,11 +3,14 @@
 @mixin reset-list(){
     display: flex;
     list-style-type: none;
-    gap: 56px;
+    gap: 40px;
     align-items: center;
     li{
         a{
             text-decoration: none;
+            &:hover{
+                text-decoration: underline;
+            }
         }
     }
 }

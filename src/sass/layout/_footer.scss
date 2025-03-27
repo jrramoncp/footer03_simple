@@ -1,0 +1,72 @@
+@use '../abstract/_variables' as v;
+@use '../abstract/_mixins' as m;
+
+footer{
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+    gap: 150px;
+    //logo container
+    .logo__container{
+        display: flex;
+        align-items: center;
+    }
+    //content
+    .content__container{
+        min-width: 90%;
+        //content top
+        .content__top{
+            //content nav
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 32px;
+            nav{
+                ul{
+                    @include m.reset_list();
+                    li{
+                        a{
+                            font-size: 16px;
+                            font-weight: v.$font-regular;
+                        }
+                    }
+                }
+            }
+            //searchbard and social
+            .search_social__container{
+                display: flex;
+                gap: 70px;
+                align-items: center;
+                input{
+                    border-radius: 10px;
+                    padding: 4px 13px;
+                    background-image: url(/img/union.svg);
+                    background-repeat: no-repeat;
+                    background-position: right 10px center;
+                    font-size: 16px;
+                    max-width: 250px;
+                    border: none;
+
+                }
+                .social__container{
+                    display: flex;
+                    gap:24px;
+                }
+            }
+        }
+        // content bottom
+
+        .content__bottom{
+            padding-top: 32px;
+            .legal_info__container{
+                @include m.reset_list();
+                li{
+                    a{
+                        font-size: 14px;
+                        font-weight: v.$font-regular;
+                    }
+                }
+            }
+        }
+    }
+}

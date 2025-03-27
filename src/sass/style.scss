@@ -9,15 +9,16 @@
     box-sizing: border-box;
     font-size: 18px;
     font-family: v.$primary-font;
+    color: #FFFFFF;
 }
 
 //BASE STYLES
-
 body{
-    background-image: linear-gradient(to right, white 50%, v.$background-secondary-color 50% 100%);
+    background-color: v.$color-black;
 }
-.page{
-    max-width: 1400px;
+
+footer{
+    max-width: 1600px;
     padding-left: 16px;
     padding-right: 16px;
     margin-right: auto;
